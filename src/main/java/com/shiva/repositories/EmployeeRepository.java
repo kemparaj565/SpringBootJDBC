@@ -15,6 +15,6 @@ public interface EmployeeRepository extends CrudRepository<Employee,Long>{
 	
 	public List<Employee> findAll();
 	
-	@Query(value="select * from employee a , Person b where a.Employee_ID=5150",nativeQuery=true)
-	public List<Employee> customQueries();
+	@Query(value="select * from employee a , Person b where b.empId=5155",nativeQuery=true)
+	public List<Employee> customQueries;
 }
